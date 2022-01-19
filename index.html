@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Word Guessing Game</title>
+    </head>
+    <body>
+        <!-- header -->
+        <!-- inside header have the title and a start button -->
+        <header>
+            <!-- used div instead idk why -->
+            <div class="large-font">Word Guessing Game</div>
+            <button class="start-button">Start</button>
+        </header>
+        <!-- have main body for the game -->
+        <!-- have two cards -->
+            <!-- first card displays word ytou are solving -->
+            <!-- every keystroke gets registered and u check the value. if it matches character in the word display that charater -->
+            <!-- at the ned display you won -->
+
+
+            <!-- displays and counts wins and losses  -->
+
+            <!-- additionally displays timer and a reset button . content is a div inside of the second card -->
+
+        <main>
+            <section>
+                <div class= "card word-guess">
+                    <div class="word-blanks large-font">J _ a v _ _ r _ i p _</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card results">
+                    <div class="win-loss-container">
+                        <h2 >Wins: <span class="wins">0</span></h2>
+                        <h2 >Losses: <span class="losses">0</span></h2>
+                        <div>
+                            <button class="reset-button">Reset</button>
+                        </div>
+                    </div>
+
+                    <div class="card timer">
+                        <div class="timer-text">
+                            <div class="timer-count large-font">10</div>
+                            <h3>seconds remaining</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./script.js"></script>
+            
+    </body>
+
+</html>
